@@ -6,7 +6,7 @@ A library of commonly used data structures, algorithms, and design patterns impl
 
 ## Getting Started
 
-#### Run in Python REPL
+#### Run in Python REPL:
 `cd algorist-python`  
 `python3`  
 `>>> from src.data_structures.hashtable import HashTable`  
@@ -15,11 +15,11 @@ A library of commonly used data structures, algorithms, and design patterns impl
 `>>> print(hashtable)`  
 `{'one': 1}`
 
-#### Run Source File
+#### Run Source File:
 `python3 src/data_structures/hashtable.py`  
 
-#### Run a single test file
+#### Run a single test file:
 `python3 -m unittest tests/data_structures/test_hashtable.py`
 
-#### Run all tests
+#### Run all tests:
 `python3 -m unittest discover`
