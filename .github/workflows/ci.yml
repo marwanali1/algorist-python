@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  lint:
+    name: Lint, Format, & Type Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip3 install pipenv
+          pipenv install
+        
+      - name: Lint with Pylint
+        run: pipenv run pylint .
+      
+      - name: Format with Black
+        run: pipenv run black . --check
+
+      - name: Type check with Mypy
+        run: pipenv run mypy .
+  
+  test:
+    name: Test 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Unit test
+        run: python3 -m unittest discover
+      
+      # - name: Check test coverage with Coveralls
+      #   run: 
