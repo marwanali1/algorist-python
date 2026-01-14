@@ -26,24 +26,24 @@ jobs:
       - name: Format with Black
         run: pipenv run black . --check
   
-  # type_check:
-  #   name: Type Check
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
+  type_check:
+    name: Type Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-  #     - name: Set up Python 3
-  #       uses: actions/setup-python@v4
-  #       with:
-  #         python-version: "3.12"
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
 
-  #     - name: Install dependencies
-  #       run: |
-  #         pip3 install pipenv
-  #         pipenv install
+      - name: Install dependencies
+        run: |
+          pip3 install pipenv
+          pipenv install
       
-  #     - name: Type check with Mypy
-  #       run: pipenv run mypy . # Research replacing mypy with Pyright (https://microsoft.github.io/pyright/#/)
+      - name: Type check with Mypy
+        run: pipenv run mypy . # Research replacing mypy with Pyright (https://microsoft.github.io/pyright/#/)
   
   test:
     name: Test 

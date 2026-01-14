@@ -1,8 +1,7 @@
 # Algorist Python
 
-[![License](https://img.shields.io/github/license/marwanali1/travisci-codecov-demo?color=g)](https://github.com/marwanali1/algorist-python/blob/main/LICENSE)
-
-[![CI](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml/badge.svg)](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml)
+[![Build Status](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml/badge.svg)](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-MIT-gr.svg)](https://github.com/marwanali1/algorist-python/blob/main/LICENSE)
 
 A library of commonly used data structures, algorithms, and design patterns implemented in Python.
 
