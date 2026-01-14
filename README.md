@@ -7,7 +7,7 @@ A library of commonly used data structures, algorithms, and design patterns impl
 ## Getting Started
 
 #### Run in Python REPL
-`cd algorist_python`  
+`cd algorist-python`  
 `python3`  
 `>>> from src.data_structures.hashtable import HashTable`  
 `>>> hashtable = HashTable()`  
