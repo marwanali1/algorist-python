@@ -43,7 +43,7 @@ jobs:
   #         pipenv install
       
   #     - name: Type check with Mypy
-  #       run: pipenv run mypy .
+  #       run: pipenv run mypy . # Research replacing mypy with Pyright (https://microsoft.github.io/pyright/#/)
   
   test:
     name: Test 
