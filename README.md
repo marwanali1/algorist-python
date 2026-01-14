@@ -1,7 +1,7 @@
 # Algorist Python
 
-[![Build Status](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml/badge.svg)](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-MIT-gr.svg)](https://github.com/marwanali1/algorist-python/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-gr.svg)](https://github.com/marwanali1/algorist-python/blob/main/LICENSE)
+[![Build Status](https://github.com/marwanali1/algorist-python/actions/workflows/ci.yml/badge.svg/?branch=main)](https://github.com/marwanali1/algorist-python/actions?query=branch%3Amain)
 
 A library of commonly used data structures, algorithms, and design patterns implemented in Python.
 
