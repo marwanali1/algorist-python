@@ -83,9 +83,7 @@ class Heap:
         new_node_index = len(self) - 1
 
         parent_index = self._get_parent_index(new_node_index)
-        while (new_node_index > 0) and (
-            self._data[new_node_index] > self._data[parent_index]
-        ):
+        while (new_node_index > 0) and (self._data[new_node_index] > self._data[parent_index]):
             self._data[new_node_index], self._data[parent_index] = (
                 self._data[parent_index],
                 self._data[new_node_index],
